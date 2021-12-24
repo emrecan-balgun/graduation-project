@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7664830fd171d6bffaa8b386e00d6577
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gem: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 3}
+  - mutant: {fileID: 4247441802271514242, guid: abf6335225e9add448b28bf5fcb465cd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
