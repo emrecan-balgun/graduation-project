@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public GameObject[] Agents;
-
+    public Text playerScoreText;
     public Text []scoreText;
     
     // Update is called once per frame
@@ -18,7 +18,8 @@ public class Score : MonoBehaviour
             scoreText[i].text = agent.GetComponent<TreasureHuntAgent>().m_TreasureHuntSettings.totalScore.ToString();
             i++;
         }
-        
-         
+
+
+        playerScoreText.text  =  GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().myScore.ToString();
     }
 }
