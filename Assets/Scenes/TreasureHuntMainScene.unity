@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.33542925, g: 0.40421787, b: 0.48918903, a: 1}
+  m_IndirectSpecularColor: {r: 0.33542916, g: 0.40421918, b: 0.489191, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2551,7 +2551,7 @@ GameObject:
   - component: {fileID: 1142252370}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2590,7 +2590,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 12.64, z: 17.23}
+  m_Center: {x: 0, y: 12.64, z: 13.69}
 --- !u!114 &1142252369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,7 +2604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 3
-  speed: 3
+  speed: 4
+  myScore: 0
 --- !u!65 &1142252370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2616,8 +2617,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.057388, y: 8.589989, z: 107.34308}
-  m_Center: {x: -2.109314, y: -3.7949944, z: 18.409866}
+  m_Size: {x: 45.729942, y: 14.487473, z: 94.64084}
+  m_Center: {x: 0.39108658, y: -0.8462527, z: 12.058746}
 --- !u!4 &1248543171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9036149285931199850, guid: a1dcd447bfbb3bc45821f8b436c031d2, type: 3}
@@ -5455,6 +5456,7 @@ MonoBehaviour:
   - {fileID: 32321014}
   - {fileID: 1612387016}
   - {fileID: 1016675829}
+  playerScoreText: {fileID: 444378565}
   scoreText:
   - {fileID: 455229810}
   - {fileID: 160216861}

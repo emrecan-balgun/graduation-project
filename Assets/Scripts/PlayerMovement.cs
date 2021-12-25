@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private UnityEngine.CharacterController controller;
 
     public float rotateSpeed = 2f, speed=6f;
-    private int myScore = 0;
+    public int myScore = 0;
     void Start()
     {
        controller= GetComponent<CharacterController>();
