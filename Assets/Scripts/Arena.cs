@@ -8,7 +8,7 @@ public class Arena : Area
     public int numGem;
     public int numMutant;
     public bool respawnObject;
-    public float range;
+    public static float range= 475f;
 
     void CreateObject(int num, GameObject type)
     {

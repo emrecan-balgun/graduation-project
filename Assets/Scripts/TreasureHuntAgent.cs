@@ -6,7 +6,7 @@ public class TreasureHuntAgent : Agent
 {
     public TreasureHuntSettings m_TreasureHuntSettings;
     public GameObject arena;
-    Arena m_MyArena;
+  
     
     bool m_Frozen;
     bool m_Poisoned;
@@ -33,7 +33,6 @@ public class TreasureHuntAgent : Agent
     public override void Initialize()
     {
         m_AgentRb = GetComponent<Rigidbody>();
-        m_MyArena = arena.GetComponent<Arena>();
         m_TreasureHuntSettings = FindObjectOfType<TreasureHuntSettings>();
         m_ResetParams = Academy.Instance.EnvironmentParameters;
         SetResetParameters();
@@ -237,8 +236,8 @@ public class TreasureHuntAgent : Agent
         m_Shoot = false;
         m_AgentRb.velocity = Vector3.zero;
         myLaser.transform.localScale = new Vector3(0f, 0f, 0f);
-        transform.position = new Vector3(Random.Range(-m_MyArena.range, m_MyArena.range),
-            -23.2f, Random.Range(-m_MyArena.range, m_MyArena.range))
+        transform.position = new Vector3(Random.Range(-Arena.range, Arena.range),
+            -23.2f, Random.Range(-Arena.range, Arena.range))
             + arena.transform.position;
         transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
 
@@ -270,6 +269,25 @@ public class TreasureHuntAgent : Agent
                 m_TreasureHuntSettings.totalScore -= 1;
               
             }
+        }
+        if (collision.gameObject.CompareTag("chest"))
+        {
+            int feature = collision.gameObject.GetComponent<Chest>().feature;
+            
+            if (feature>0)
+                Satiate();
+            
+            else
+            {
+                Poison();
+                print("POISOON");
+            }
+            
+            collision.gameObject.GetComponent<ObjectLogic>().OnEaten();
+            AddReward(feature);
+            m_TreasureHuntSettings.totalScore += feature;
+            collision.gameObject.transform.position = ChestManager.SetRandomPosition(); 
+            
         }
     }
 
