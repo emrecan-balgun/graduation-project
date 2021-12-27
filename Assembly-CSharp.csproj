@@ -52,21 +52,30 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Scripts\ChestManager.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\SensorBase.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\TargetContact.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\JointDriveController.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\Monitor.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\ProjectSettingsOverrides.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
      <Compile Include="Assets\Scripts\ObjectLogic.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ButtonClickEvent.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\FlyCamera.cs" />
      <Compile Include="Assets\Resources\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\Chest.cs" />
      <Compile Include="Assets\ML-Agents\Examples\ShipGame\Scripts\FoodLogic.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\GroundContact.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
      <Compile Include="Assets\Scripts\TreasureHuntAgent.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\Area.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\ML-Agents\Examples\ShipGame\Scripts\FoodCollectorArea.cs" />
      <Compile Include="Assets\Scripts\Arena.cs" />
      <Compile Include="Assets\Scripts\TreasureHuntSettings.cs" />
@@ -74,6 +83,7 @@
      <Compile Include="Assets\ML-Agents\Examples\ShipGame\Scripts\FoodCollectorAgent.cs" />
      <Compile Include="Assets\ML-Agents\Examples\SharedAssets\Scripts\AdjustTrainingTimescale.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\ML-Agents\Examples\ShipGame\Scripts\FoodCollectorSettings.cs" />
      <None Include="Assets\Wispy Sky\ReadMe.txt" />
      <None Include="Assets\ML-Agents\Examples\SharedAssets\Materials\GridPatternShader.shader" />

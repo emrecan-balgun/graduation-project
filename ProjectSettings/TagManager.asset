@@ -15,6 +15,7 @@ TagManager:
   - mutant
   - gem
   - frozenAgent
+  - chest
   layers:
   - Default
   - TransparentFX
