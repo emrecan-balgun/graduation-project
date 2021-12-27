@@ -10,9 +10,9 @@ public class ObjectLogic : MonoBehaviour
     	if(respawn)
     	{
     		transform.position = new Vector3(
-	            Random.Range(-myArena.range, myArena.range),
+	            Random.Range(-Arena.range, Arena.range),
     			0f,
-    			Random.Range(-myArena.range, myArena.range)) + myArena.transform.position;
+    			Random.Range(-Arena.range, Arena.range)) + myArena.transform.position;
     	}
     	else{
     		Destroy(gameObject);
